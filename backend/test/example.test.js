@@ -8,7 +8,7 @@ describe("Product API", () => {
         const response =
             await request(app)
                 .get("/api/products");
-
+// knkj
         expect(response.statusCode).toBe(200);
     });
 
