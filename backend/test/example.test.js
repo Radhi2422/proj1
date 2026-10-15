@@ -9,6 +9,7 @@ describe("Product API", () => {
             await request(app)
                 .get("/api/products");
 // knkj
+// kjnkjnkj
         expect(response.statusCode).toBe(200);
     });
 
