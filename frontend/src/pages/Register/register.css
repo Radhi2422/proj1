@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#eef3fa;
+}
+
+.register-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#eef3fa,#d8e7ff);
+}
+
+.register-card{
+    width:450px;
+    background:#fff;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.register-card h2{
+    text-align:center;
+    color:#1f2937;
+    margin-bottom:8px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#777;
+    margin-bottom:30px;
+}
+
+.register-card form{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.register-card input{
+    height:48px;
+    padding:0 15px;
+    border:1px solid #d8d8d8;
+    border-radius:8px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.register-card input:focus{
+    outline:none;
+    border-color:#2563eb;
+    box-shadow:0 0 8px rgba(37,99,235,.2);
+}
+
+.register-card button{
+    margin-top:8px;
+    height:48px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.register-card button:hover{
+    background:#1d4ed8;
+}
+
+.error{
+    text-align:center;
+    color:#dc2626;
+    font-size:14px;
+}
+
+.success{
+    text-align:center;
+    color:#16a34a;
+    font-size:14px;
+}
+
+.divider{
+    display:flex;
+    align-items:center;
+    margin:28px 0 18px;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    flex:1;
+    border-bottom:1px solid #ddd;
+}
+
+.divider span{
+    margin:0 12px;
+    color:#888;
+    font-size:14px;
+}
+
+.login-btn{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    border:2px solid #2563eb;
+    color:#2563eb;
+    padding:12px;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#2563eb;
+    color:#fff;
+}
+
+@media(max-width:500px){
+
+.register-card{
+    width:92%;
+    padding:25px;
+}
+
+}

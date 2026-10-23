@@ -1,0 +1,18 @@
+
+  .container
+  {max-width:1100px;
+  margin:auto;
+  padding:20px;
+  font-family:Arial}.grid{display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px}
+  .full{grid-column:1/-1}section{background:#fff;
+  padding:20px;
+  margin:20px 0;
+  border-radius:8px;
+  box-shadow:0 2px 8px #ddd}
+  input,textarea{width:100%;
+  padding:10px}button{padding:10px 18px;
+  margin-top:15px}label{display:block;
+  margin:8px 0 4px;
+  font-weight:bold}
