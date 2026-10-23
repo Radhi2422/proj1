@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon server.js",
     "lint": "eslint .",
-    "test": "vitest run",
+    "test": "jest",
     "type-check": "tsc --noEmit",
     "build": "tsc",
     "check": "npm run lint && npm run test && npm run type-check && npm run build"
