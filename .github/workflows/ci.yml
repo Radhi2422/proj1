@@ -1,4 +1,5 @@
 name: MERN CI Pipeline
+
 on:
   push:
     branches: [main, develop]
@@ -8,12 +9,16 @@ on:
 
 jobs:
 
+  # ==========================
+  # BACKEND CI
+  # ==========================
   backend:
+    name: Backend CI
     runs-on: ubuntu-latest
 
     defaults:
       run:
-        working-directory: backend
+        working-directory: ./backend
 
     steps:
       - name: Checkout Code
@@ -35,12 +40,16 @@ jobs:
       - name: Run Backend Tests
         run: npm test
 
+  # ==========================
+  # FRONTEND CI
+  # ==========================
   frontend:
+    name: Frontend CI
     runs-on: ubuntu-latest
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: ./frontend
 
     steps:
       - name: Checkout Code
